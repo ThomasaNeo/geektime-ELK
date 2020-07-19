@@ -32,3 +32,6 @@ logstash.conf配置文件需要这么修改:
 
 - sincedb_path:"null"(可以是一个不存在的文件)
 - path：windows下文件分隔如果"\"，不会导入数据，也没有error信息，需要改成："/"
+
+## windows下需要执行脚本文件，但是默认的安全策略不同意执行，需要设置更改其安全策略
+- set-executionpolicy remotesigned
