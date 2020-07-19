@@ -30,5 +30,5 @@ bin/logstash -f /YOUR_PATH_of_logstash.conf
 ## windows下启动Logstash注意事项
 logstash.conf配置文件需要这么修改:
 
-- sincedb_path:可以是一个不存在的文件
+- sincedb_path:"null"(可以是一个不存在的文件)
 - path：windows下文件分隔如果"\"，不会导入数据，也没有error信息，需要改成："/"
